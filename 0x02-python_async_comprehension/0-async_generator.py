@@ -4,9 +4,10 @@ module for Async generator
 """
 import asyncio
 import random
+from typing import Generator
 
 
-async def async_generator():
+async def async_generator() -> Generator[float, None, None]:
     '''
     Write a coroutine called async_generator that takes no arguments.
 
